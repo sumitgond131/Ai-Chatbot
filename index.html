@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-header">
+        <div class="header-content">
+            <div class="ai-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="header-info">
+                <h1>AI Assistant</h1>
+                <span class="status">Online</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="ai-chat-box">
+            <div class="ai-avatar-small">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="ai-chat-area">
+                Hello! How can I help you today?
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-area">
+        <div class="input-container">
+            <input type="text" id="prompt" placeholder="Type your message...">
+            <button id="image" class="attachment-btn" title="Attach Image">
+                <i class="fas fa-paperclip"></i>
+                <input type="file" accept="image/*" hidden>
+            </button>
+            <button id="submit" class="send-btn" title="Send Message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
